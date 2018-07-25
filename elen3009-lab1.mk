@@ -62,7 +62,7 @@ AS       := C:/mingw64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/src_guessing-game.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/src_complex_complex.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/src_guessing-game.cpp$(ObjectSuffix): src/guessing-game.cpp $(IntermediateDirectory)/src_guessing-game.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/s/Documents/ELEN3009/elen3009-lab1/src/guessing-game.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_guessing-game.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/src_guessing-game.cpp$(DependSuffix): src/guessing-game.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_guessing-game.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_guessing-game.cpp$(DependSuffix) -MM src/guessing-game.cpp
+$(IntermediateDirectory)/src_complex_complex.cpp$(ObjectSuffix): src/complex/complex.cpp $(IntermediateDirectory)/src_complex_complex.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/s/Documents/ELEN3009/elen3009-lab1/src/complex/complex.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_complex_complex.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/src_complex_complex.cpp$(DependSuffix): src/complex/complex.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_complex_complex.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_complex_complex.cpp$(DependSuffix) -MM src/complex/complex.cpp
 
-$(IntermediateDirectory)/src_guessing-game.cpp$(PreprocessSuffix): src/guessing-game.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_guessing-game.cpp$(PreprocessSuffix) src/guessing-game.cpp
+$(IntermediateDirectory)/src_complex_complex.cpp$(PreprocessSuffix): src/complex/complex.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_complex_complex.cpp$(PreprocessSuffix) src/complex/complex.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

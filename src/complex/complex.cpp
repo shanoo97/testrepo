@@ -18,7 +18,7 @@ int main()
 			<< " + " << answer.imag() << "j" 
 			<< endl	<< endl;
 
-	// answer++;
+	 answer++;
 
 	return 0;
 }

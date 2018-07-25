@@ -4,7 +4,7 @@
     <File Name="src/guessing-game.cpp" ExcludeProjConfig="Debug;"/>
   </VirtualDirectory>
   <VirtualDirectory Name="complex">
-    <File Name="src/complex/complex.cpp" ExcludeProjConfig="Debug;"/>
+    <File Name="src/complex/complex.cpp" ExcludeProjConfig=""/>
   </VirtualDirectory>
   <VirtualDirectory Name="screen">
     <File Name="src/screen/scr_main.cpp" ExcludeProjConfig="Debug;"/>
