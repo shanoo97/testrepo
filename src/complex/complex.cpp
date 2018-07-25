@@ -5,11 +5,12 @@
 #include <complex>	// contains the complex class definition
 
 using namespace std; // cout, endl, complex are all part of this namespace
-
+typedef complex<float> complexnumb;
 int main()
 {
-	auto num1 = complex<float>{2.0, 2.0};  // use auto for type deduction
-	auto num2 = complex<float>{4.0, -2.0}; // use uniform initialisation syntax (curly braces)
+    
+	auto num1 = complexnumb{2.0, 2.0};  // use auto for type deduction
+	auto num2 = complexnumb{4.0, -2.0}; // use uniform initialisation syntax (curly braces)
 
 	auto answer = num1 * num2; // type deduced for 'answer' is: complex<float>
 
@@ -18,7 +19,7 @@ int main()
 			<< " + " << answer.imag() << "j" 
 			<< endl	<< endl;
 
-	 answer++;
-
+	// answer++;
+/*Because the operator is not overloaded. The compiler does not know what to do with the ++ */
 	return 0;
 }
